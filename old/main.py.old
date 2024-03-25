@@ -1,0 +1,10 @@
+from time import sleep
+from machine import Pin
+
+led = Pin(32, Pin.OUT)  # gewijzigd pinnummer
+
+for _ in range(5):
+    led.on()
+    sleep(1)
+    led.off()
+    sleep(1)
